@@ -1,6 +1,6 @@
 type BreadCrumbItemsType = { title: string; href: string }[];
 
-export default function Breadcrumbs(): JSX.Element {
+export default function Breadcrumb(): JSX.Element {
   const router = useRouter();
   const [breadcrumbs, setBreadcrumbs] = useState<BreadCrumbItemsType>([]);
 
