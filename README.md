@@ -1,0 +1,1 @@
+# Breadcrumbs for NextJS
