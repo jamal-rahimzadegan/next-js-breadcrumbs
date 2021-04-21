@@ -1,7 +1,5 @@
 # Breadcrumbs for NextJS
 ```ts
-type BreadCrumbItemsType = { title: string; href: string }[];
-
 export default function Breadcrumb(): JSX.Element {
   const router = useRouter();
   const [breadcrumbs, setBreadcrumbs] = useState<BreadCrumbItemsType>([]);
