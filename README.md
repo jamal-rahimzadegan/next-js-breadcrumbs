@@ -2,7 +2,7 @@
 ```ts
 type BreadCrumbItemsType = { title: string; href: string }[];
 
-export default function Breadcrumb(): JSX.Element {
+export default function Breadcrumbs(): JSX.Element {
   const router = useRouter();
   const [breadcrumbs, setBreadcrumbs] = useState<BreadCrumbItemsType>([]);
 
@@ -42,7 +42,7 @@ export default function Breadcrumb(): JSX.Element {
     <div className="d-flex align-items-center">
       <p onClick={() => navigate('/')}>home</p>
       {breadcrumbs.map((item, i) => {
-        return item.title !== 'homepage title goes here' ? ( // exclude your homepage if you have a button that goes to home page by this condition
+        return item.title !== 'homepage title goes here' ? ( // exclude your homepage if you have a button that goes to the home page by this condition
           <>
             <p className="mx-1">-</p>
             <p onClick={() => navigate(item.href)} key={item.href}>
