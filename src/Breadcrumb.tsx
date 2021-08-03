@@ -32,9 +32,7 @@ export default function Breadcrumb(): JSX.Element {
 
   const navigate = (route) => router.push(route);
 
-  useEffect(() => {
-    handleBreadCrumb();
-  }, [router]);
+  useEffect(handleBreadCrumb , [router]);
 
   return breadcrumbs ? (
     <div className="d-flex align-items-center">
