@@ -24,6 +24,7 @@ export default function Breadcrumbs(): JSX.Element {
 
   const handlePathName = (title) => {
     const path = title.replaceAll('/', '');
+    
     switch (path) {
       case 'static name of page':
         return 'it is a correspond to static title';
